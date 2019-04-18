@@ -1,15 +1,13 @@
 package com.example.contacts;
 
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Context;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Index extends AppCompatActivity {
 
@@ -71,7 +69,7 @@ public class Index extends AppCompatActivity {
             Log.d("실행할 쿼리 :: ",sql);
             db.execSQL(sql);
             Log.d("=====================", "create 쿼리실행완료");
-            /*String[] names = {"한예슬", "김태희", "정연", "쯔위","한가인"};
+            /*String[] names = {"한예슬", "김태희", "김광규", "정연","한가인"};
             String[] emails = {"yee", "kim", "jung", "han"};
             for(int i = 0; i<names.length; i++){
                 Log.d("입력될 이름 :: ", names[i]);
